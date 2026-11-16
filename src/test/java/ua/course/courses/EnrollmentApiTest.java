@@ -115,7 +115,7 @@ class EnrollmentApiTest {
     @DisplayName("GET неіснуючої заявки -> 404, code і message")
     void getMissingEnrollment_returns404() {
         given().get("/enrollments/{id}", 999_999_999L).then()
-                .statusCode(200)
+                .statusCode(404)
                 .body("code", equalTo("NOT_FOUND"))
                 .body("message", equalTo("Заявку не знайдено"));
     }
