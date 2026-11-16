@@ -1,0 +1,657 @@
+2026-11-02 20:43:32,409 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-11-02 20:43:32,420 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.6.3\bin\user.properties
+2026-11-02 20:43:32,420 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.6.3\bin\system.properties
+2026-11-02 20:43:32,420 INFO o.a.j.JMeter: Setting JMeter property: threads=200
+2026-11-02 20:43:32,420 INFO o.a.j.JMeter: Setting JMeter property: rampup=240
+2026-11-02 20:43:32,420 INFO o.a.j.JMeter: Setting JMeter property: duration=270
+2026-11-02 20:43:32,420 INFO o.a.j.JMeter: Setting JMeter property: think=100
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: Version 5.6.3
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: java.version=25.0.2
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: os.name=Windows 11
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: os.arch=amd64
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: os.version=10.0
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: java.awt.headless=true
+2026-11-02 20:43:32,426 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-11-02 20:43:32,427 INFO o.a.j.JMeter: Available Processors =12
+2026-11-02 20:43:32,437 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-11-02 20:43:32,437 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-11-02 20:43:32,437 INFO o.a.j.JMeter: JMeterHome=D:\apache-jmeter-5.6.3
+2026-11-02 20:43:32,437 INFO o.a.j.JMeter: user.dir  =D:\javalabs\Lab6TestingSW\perf
+2026-11-02 20:43:32,438 INFO o.a.j.JMeter: PWD       =D:\javalabs\Lab6TestingSW\perf
+2026-11-02 20:43:32,439 INFO o.a.j.JMeter: IP: 192.168.0.128 Name: DESKTOP-9ICR6H7 FullName: DESKTOP-9ICR6H7
+2026-11-02 20:43:32,446 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'D:\javalabs\Lab6TestingSW\perf\report-jmeter-stress'
+2026-11-02 20:43:32,448 INFO o.a.j.s.FileServer: Default base='D:\javalabs\Lab6TestingSW\perf'
+2026-11-02 20:43:32,449 INFO o.a.j.s.FileServer: Set new base='D:\javalabs\Lab6TestingSW\perf'
+2026-11-02 20:43:32,645 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-11-02 20:43:32,658 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-11-02 20:43:32,660 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-11-02 20:43:32,662 INFO o.a.j.s.SaveService: Loading file: lab7.jmx
+2026-11-02 20:43:32,698 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-02 20:43:32,698 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-02 20:43:32,698 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-02 20:43:32,698 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-02 20:43:32,698 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-11-02 20:43:32,698 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-11-02 20:43:32,713 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-11-02 20:43:32,720 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-11-02 20:43:32,720 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: results-jmeter-stress.jtl
+2026-11-02 20:43:32,720 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: D:\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-11-02 20:43:32,722 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-11-02 20:43:32,725 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-11-02 20:43:32,726 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-11-02 20:43:32,727 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-11-02 20:43:32,727 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-11-02 20:43:32,727 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-11-02 20:43:32,727 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-11-02 20:43:32,727 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-11-02 20:43:32,727 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-11-02 20:43:32,727 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-11-02 20:43:32,729 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,731 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,732 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,732 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,733 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,733 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,733 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,734 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,734 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,735 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-02 20:43:32,736 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-11-02 20:43:32,736 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-11-02 20:43:32,736 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-11-02 20:43:32,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-11-02 20:43:32,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-11-02 20:43:32,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-11-02 20:43:32,748 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-11-02 20:43:32,748 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-02 20:43:32,748 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-02 20:43:32,753 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-11-02 20:43:32,753 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-11-02 20:43:32,834 INFO o.a.j.JMeter: Running test (1793645012834)
+2026-11-02 20:43:32,850 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
+2026-11-02 20:43:32,851 INFO o.a.j.e.StandardJMeterEngine: Starting 200 threads for group Users.
+2026-11-02 20:43:32,851 INFO o.a.j.e.StandardJMeterEngine: Thread will start next loop on error
+2026-11-02 20:43:32,851 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=200 ramp-up=240 delayedStart=false
+2026-11-02 20:43:32,855 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
+2026-11-02 20:43:32,905 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-11-02 20:43:32,905 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-11-02 20:43:32,968 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-9ICR6H7
+2026-11-02 20:43:32,972 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-11-02 20:43:32,973 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-11-02 20:43:32,973 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-11-02 20:43:32,973 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-11-02 20:43:32,973 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-11-02 20:43:33,065 INFO o.a.j.r.Summariser: summary +      1 in 00:00:00 =    4.3/s Avg:    39 Min:    39 Max:    39 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-11-02 20:43:34,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-2
+2026-11-02 20:43:35,254 INFO o.a.j.t.JMeterThread: Thread started: Users 1-3
+2026-11-02 20:43:36,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-4
+2026-11-02 20:43:37,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-5
+2026-11-02 20:43:38,851 INFO o.a.j.t.JMeterThread: Thread started: Users 1-6
+2026-11-02 20:43:40,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-7
+2026-11-02 20:43:41,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-8
+2026-11-02 20:43:42,451 INFO o.a.j.t.JMeterThread: Thread started: Users 1-9
+2026-11-02 20:43:43,657 INFO o.a.j.t.JMeterThread: Thread started: Users 1-10
+2026-11-02 20:43:44,855 INFO o.a.j.t.JMeterThread: Thread started: Users 1-11
+2026-11-02 20:43:46,051 INFO o.a.j.t.JMeterThread: Thread started: Users 1-12
+2026-11-02 20:43:47,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-13
+2026-11-02 20:43:48,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-14
+2026-11-02 20:43:49,654 INFO o.a.j.t.JMeterThread: Thread started: Users 1-15
+2026-11-02 20:43:50,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-16
+2026-11-02 20:43:52,051 INFO o.a.j.t.JMeterThread: Thread started: Users 1-17
+2026-11-02 20:43:53,255 INFO o.a.j.t.JMeterThread: Thread started: Users 1-18
+2026-11-02 20:43:54,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-19
+2026-11-02 20:43:55,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-20
+2026-11-02 20:43:56,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-21
+2026-11-02 20:43:58,054 INFO o.a.j.t.JMeterThread: Thread started: Users 1-22
+2026-11-02 20:43:59,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-23
+2026-11-02 20:44:00,002 INFO o.a.j.r.Summariser: summary +  14001 in 00:00:27 =  519.8/s Avg:     2 Min:     0 Max:    38 Err:     0 (0.00%) Active: 23 Started: 23 Finished: 0
+2026-11-02 20:44:00,002 INFO o.a.j.r.Summariser: summary =  14002 in 00:00:27 =  515.4/s Avg:     2 Min:     0 Max:    39 Err:     0 (0.00%)
+2026-11-02 20:44:00,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-24
+2026-11-02 20:44:01,651 INFO o.a.j.t.JMeterThread: Thread started: Users 1-25
+2026-11-02 20:44:02,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-26
+2026-11-02 20:44:04,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-27
+2026-11-02 20:44:05,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-28
+2026-11-02 20:44:06,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-29
+2026-11-02 20:44:07,654 INFO o.a.j.t.JMeterThread: Thread started: Users 1-30
+2026-11-02 20:44:08,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-31
+2026-11-02 20:44:10,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-32
+2026-11-02 20:44:11,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-33
+2026-11-02 20:44:12,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-34
+2026-11-02 20:44:13,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-35
+2026-11-02 20:44:14,851 INFO o.a.j.t.JMeterThread: Thread started: Users 1-36
+2026-11-02 20:44:16,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-37
+2026-11-02 20:44:17,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-38
+2026-11-02 20:44:18,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-39
+2026-11-02 20:44:19,651 INFO o.a.j.t.JMeterThread: Thread started: Users 1-40
+2026-11-02 20:44:20,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-41
+2026-11-02 20:44:22,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-42
+2026-11-02 20:44:23,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-43
+2026-11-02 20:44:24,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-44
+2026-11-02 20:44:25,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-45
+2026-11-02 20:44:26,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-46
+2026-11-02 20:44:28,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-47
+2026-11-02 20:44:29,254 INFO o.a.j.t.JMeterThread: Thread started: Users 1-48
+2026-11-02 20:44:30,000 INFO o.a.j.r.Summariser: summary +  46871 in 00:00:30 = 1562.4/s Avg:     2 Min:     0 Max:    61 Err:     0 (0.00%) Active: 48 Started: 48 Finished: 0
+2026-11-02 20:44:30,001 INFO o.a.j.r.Summariser: summary =  60873 in 00:00:57 = 1064.8/s Avg:     2 Min:     0 Max:    61 Err:     0 (0.00%)
+2026-11-02 20:44:30,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-49
+2026-11-02 20:44:31,654 INFO o.a.j.t.JMeterThread: Thread started: Users 1-50
+2026-11-02 20:44:32,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-51
+2026-11-02 20:44:34,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-52
+2026-11-02 20:44:35,251 INFO o.a.j.t.JMeterThread: Thread started: Users 1-53
+2026-11-02 20:44:36,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-54
+2026-11-02 20:44:37,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-55
+2026-11-02 20:44:38,851 INFO o.a.j.t.JMeterThread: Thread started: Users 1-56
+2026-11-02 20:44:40,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-57
+2026-11-02 20:44:41,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-58
+2026-11-02 20:44:42,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-59
+2026-11-02 20:44:43,653 INFO o.a.j.t.JMeterThread: Thread started: Users 1-60
+2026-11-02 20:44:44,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-61
+2026-11-02 20:44:46,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-62
+2026-11-02 20:44:47,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-63
+2026-11-02 20:44:48,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-64
+2026-11-02 20:44:49,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-65
+2026-11-02 20:44:50,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-66
+2026-11-02 20:44:52,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-67
+2026-11-02 20:44:53,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-68
+2026-11-02 20:44:54,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-69
+2026-11-02 20:44:55,651 INFO o.a.j.t.JMeterThread: Thread started: Users 1-70
+2026-11-02 20:44:56,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-71
+2026-11-02 20:44:58,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-72
+2026-11-02 20:44:59,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-73
+2026-11-02 20:45:00,001 INFO o.a.j.r.Summariser: summary +  76616 in 00:00:30 = 2553.9/s Avg:     3 Min:     0 Max:    85 Err:     0 (0.00%) Active: 73 Started: 73 Finished: 0
+2026-11-02 20:45:00,001 INFO o.a.j.r.Summariser: summary = 137489 in 00:01:27 = 1577.3/s Avg:     3 Min:     0 Max:    85 Err:     0 (0.00%)
+2026-11-02 20:45:00,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-74
+2026-11-02 20:45:01,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-75
+2026-11-02 20:45:02,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-76
+2026-11-02 20:45:04,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-77
+2026-11-02 20:45:05,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-78
+2026-11-02 20:45:06,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-79
+2026-11-02 20:45:07,653 INFO o.a.j.t.JMeterThread: Thread started: Users 1-80
+2026-11-02 20:45:08,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-81
+2026-11-02 20:45:10,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-82
+2026-11-02 20:45:11,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-83
+2026-11-02 20:45:12,451 INFO o.a.j.t.JMeterThread: Thread started: Users 1-84
+2026-11-02 20:45:13,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-85
+2026-11-02 20:45:14,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-86
+2026-11-02 20:45:16,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-87
+2026-11-02 20:45:17,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-88
+2026-11-02 20:45:18,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-89
+2026-11-02 20:45:19,653 INFO o.a.j.t.JMeterThread: Thread started: Users 1-90
+2026-11-02 20:45:20,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-91
+2026-11-02 20:45:22,051 INFO o.a.j.t.JMeterThread: Thread started: Users 1-92
+2026-11-02 20:45:23,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-93
+2026-11-02 20:45:24,451 INFO o.a.j.t.JMeterThread: Thread started: Users 1-94
+2026-11-02 20:45:25,653 INFO o.a.j.t.JMeterThread: Thread started: Users 1-95
+2026-11-02 20:45:26,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-96
+2026-11-02 20:45:28,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-97
+2026-11-02 20:45:29,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-98
+2026-11-02 20:45:30,001 INFO o.a.j.r.Summariser: summary + 104393 in 00:00:30 = 3479.7/s Avg:     4 Min:     0 Max:   127 Err:     0 (0.00%) Active: 98 Started: 98 Finished: 0
+2026-11-02 20:45:30,002 INFO o.a.j.r.Summariser: summary = 241882 in 00:01:57 = 2064.4/s Avg:     3 Min:     0 Max:   127 Err:     0 (0.00%)
+2026-11-02 20:45:30,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-99
+2026-11-02 20:45:31,651 INFO o.a.j.t.JMeterThread: Thread started: Users 1-100
+2026-11-02 20:45:32,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-101
+2026-11-02 20:45:34,054 INFO o.a.j.t.JMeterThread: Thread started: Users 1-102
+2026-11-02 20:45:35,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-103
+2026-11-02 20:45:36,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-104
+2026-11-02 20:45:37,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-105
+2026-11-02 20:45:38,851 INFO o.a.j.t.JMeterThread: Thread started: Users 1-106
+2026-11-02 20:45:40,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-107
+2026-11-02 20:45:41,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-108
+2026-11-02 20:45:42,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-109
+2026-11-02 20:45:43,651 INFO o.a.j.t.JMeterThread: Thread started: Users 1-110
+2026-11-02 20:45:44,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-111
+2026-11-02 20:45:46,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-112
+2026-11-02 20:45:47,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-113
+2026-11-02 20:45:48,451 INFO o.a.j.t.JMeterThread: Thread started: Users 1-114
+2026-11-02 20:45:49,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-115
+2026-11-02 20:45:50,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-116
+2026-11-02 20:45:52,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-117
+2026-11-02 20:45:53,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-118
+2026-11-02 20:45:54,451 INFO o.a.j.t.JMeterThread: Thread started: Users 1-119
+2026-11-02 20:45:55,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-120
+2026-11-02 20:45:56,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-121
+2026-11-02 20:45:58,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-122
+2026-11-02 20:45:59,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-123
+2026-11-02 20:46:00,000 INFO o.a.j.r.Summariser: summary + 129865 in 00:00:30 = 4329.0/s Avg:     5 Min:     0 Max:   263 Err:     0 (0.00%) Active: 123 Started: 123 Finished: 0
+2026-11-02 20:46:00,000 INFO o.a.j.r.Summariser: summary = 371747 in 00:02:27 = 2526.0/s Avg:     4 Min:     0 Max:   263 Err:     0 (0.00%)
+2026-11-02 20:46:00,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-124
+2026-11-02 20:46:01,651 INFO o.a.j.t.JMeterThread: Thread started: Users 1-125
+2026-11-02 20:46:02,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-126
+2026-11-02 20:46:04,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-127
+2026-11-02 20:46:05,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-128
+2026-11-02 20:46:06,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-129
+2026-11-02 20:46:07,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-130
+2026-11-02 20:46:08,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-131
+2026-11-02 20:46:10,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-132
+2026-11-02 20:46:11,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-133
+2026-11-02 20:46:12,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-134
+2026-11-02 20:46:13,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-135
+2026-11-02 20:46:14,851 INFO o.a.j.t.JMeterThread: Thread started: Users 1-136
+2026-11-02 20:46:16,051 INFO o.a.j.t.JMeterThread: Thread started: Users 1-137
+2026-11-02 20:46:17,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-138
+2026-11-02 20:46:18,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-139
+2026-11-02 20:46:19,651 INFO o.a.j.t.JMeterThread: Thread started: Users 1-140
+2026-11-02 20:46:20,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-141
+2026-11-02 20:46:22,051 INFO o.a.j.t.JMeterThread: Thread started: Users 1-142
+2026-11-02 20:46:23,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-143
+2026-11-02 20:46:24,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-144
+2026-11-02 20:46:25,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-145
+2026-11-02 20:46:26,891 INFO o.a.j.t.JMeterThread: Thread started: Users 1-146
+2026-11-02 20:46:28,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-147
+2026-11-02 20:46:29,251 INFO o.a.j.t.JMeterThread: Thread started: Users 1-148
+2026-11-02 20:46:30,000 INFO o.a.j.r.Summariser: summary + 137422 in 00:00:30 = 4580.7/s Avg:     9 Min:     0 Max:   511 Err:     0 (0.00%) Active: 148 Started: 148 Finished: 0
+2026-11-02 20:46:30,000 INFO o.a.j.r.Summariser: summary = 509169 in 00:02:57 = 2874.0/s Avg:     5 Min:     0 Max:   511 Err:     0 (0.00%)
+2026-11-02 20:46:30,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-149
+2026-11-02 20:46:31,653 INFO o.a.j.t.JMeterThread: Thread started: Users 1-150
+2026-11-02 20:46:32,851 INFO o.a.j.t.JMeterThread: Thread started: Users 1-151
+2026-11-02 20:46:34,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-152
+2026-11-02 20:46:35,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-153
+2026-11-02 20:46:36,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-154
+2026-11-02 20:46:37,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-155
+2026-11-02 20:46:38,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-156
+2026-11-02 20:46:40,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-157
+2026-11-02 20:46:41,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-158
+2026-11-02 20:46:42,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-159
+2026-11-02 20:46:43,653 INFO o.a.j.t.JMeterThread: Thread started: Users 1-160
+2026-11-02 20:46:44,851 INFO o.a.j.t.JMeterThread: Thread started: Users 1-161
+2026-11-02 20:46:46,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-162
+2026-11-02 20:46:47,251 INFO o.a.j.t.JMeterThread: Thread started: Users 1-163
+2026-11-02 20:46:48,451 INFO o.a.j.t.JMeterThread: Thread started: Users 1-164
+2026-11-02 20:46:49,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-165
+2026-11-02 20:46:50,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-166
+2026-11-02 20:46:52,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-167
+2026-11-02 20:46:53,251 INFO o.a.j.t.JMeterThread: Thread started: Users 1-168
+2026-11-02 20:46:54,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-169
+2026-11-02 20:46:55,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-170
+2026-11-02 20:46:56,851 INFO o.a.j.t.JMeterThread: Thread started: Users 1-171
+2026-11-02 20:46:58,051 INFO o.a.j.t.JMeterThread: Thread started: Users 1-172
+2026-11-02 20:46:59,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-173
+2026-11-02 20:47:00,003 INFO o.a.j.r.Summariser: summary + 140809 in 00:00:30 = 4693.2/s Avg:    13 Min:     0 Max:   740 Err:     0 (0.00%) Active: 173 Started: 173 Finished: 0
+2026-11-02 20:47:00,004 INFO o.a.j.r.Summariser: summary = 649978 in 00:03:27 = 3137.4/s Avg:     7 Min:     0 Max:   740 Err:     0 (0.00%)
+2026-11-02 20:47:00,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-174
+2026-11-02 20:47:01,653 INFO o.a.j.t.JMeterThread: Thread started: Users 1-175
+2026-11-02 20:47:02,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-176
+2026-11-02 20:47:04,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-177
+2026-11-02 20:47:05,251 INFO o.a.j.t.JMeterThread: Thread started: Users 1-178
+2026-11-02 20:47:06,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-179
+2026-11-02 20:47:07,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-180
+2026-11-02 20:47:08,853 INFO o.a.j.t.JMeterThread: Thread started: Users 1-181
+2026-11-02 20:47:10,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-182
+2026-11-02 20:47:11,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-183
+2026-11-02 20:47:12,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-184
+2026-11-02 20:47:13,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-185
+2026-11-02 20:47:14,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-186
+2026-11-02 20:47:16,051 INFO o.a.j.t.JMeterThread: Thread started: Users 1-187
+2026-11-02 20:47:17,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-188
+2026-11-02 20:47:18,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-189
+2026-11-02 20:47:19,653 INFO o.a.j.t.JMeterThread: Thread started: Users 1-190
+2026-11-02 20:47:20,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-191
+2026-11-02 20:47:22,053 INFO o.a.j.t.JMeterThread: Thread started: Users 1-192
+2026-11-02 20:47:23,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-193
+2026-11-02 20:47:24,451 INFO o.a.j.t.JMeterThread: Thread started: Users 1-194
+2026-11-02 20:47:25,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-195
+2026-11-02 20:47:26,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-196
+2026-11-02 20:47:28,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-197
+2026-11-02 20:47:29,253 INFO o.a.j.t.JMeterThread: Thread started: Users 1-198
+2026-11-02 20:47:30,000 INFO o.a.j.r.Summariser: summary + 137361 in 00:00:30 = 4579.2/s Avg:    20 Min:     0 Max:  1103 Err:     0 (0.00%) Active: 198 Started: 198 Finished: 0
+2026-11-02 20:47:30,000 INFO o.a.j.r.Summariser: summary = 787339 in 00:03:57 = 3319.8/s Avg:     9 Min:     0 Max:  1103 Err:     0 (0.00%)
+2026-11-02 20:47:30,453 INFO o.a.j.t.JMeterThread: Thread started: Users 1-199
+2026-11-02 20:47:31,652 INFO o.a.j.t.JMeterThread: Thread started: Users 1-200
+2026-11-02 20:48:00,000 INFO o.a.j.r.Summariser: summary + 122828 in 00:00:30 = 4094.3/s Avg:    28 Min:     0 Max:  1283 Err:     0 (0.00%) Active: 200 Started: 200 Finished: 0
+2026-11-02 20:48:00,001 INFO o.a.j.r.Summariser: summary = 910167 in 00:04:27 = 3406.7/s Avg:    12 Min:     0 Max:  1283 Err:     0 (0.00%)
+2026-11-02 20:48:02,763 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-10
+2026-11-02 20:48:02,771 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-15
+2026-11-02 20:48:02,773 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-32
+2026-11-02 20:48:02,777 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-49
+2026-11-02 20:48:02,777 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-33
+2026-11-02 20:48:02,787 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-72
+2026-11-02 20:48:02,787 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-22
+2026-11-02 20:48:02,789 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-81
+2026-11-02 20:48:02,791 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-11
+2026-11-02 20:48:02,792 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-114
+2026-11-02 20:48:02,793 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-106
+2026-11-02 20:48:02,793 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-7
+2026-11-02 20:48:02,794 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-98
+2026-11-02 20:48:02,794 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-61
+2026-11-02 20:48:02,795 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-56
+2026-11-02 20:48:02,796 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-25
+2026-11-02 20:48:02,797 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-5
+2026-11-02 20:48:02,798 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-37
+2026-11-02 20:48:02,798 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-96
+2026-11-02 20:48:02,799 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-123
+2026-11-02 20:48:02,801 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-46
+2026-11-02 20:48:02,802 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-102
+2026-11-02 20:48:02,802 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-117
+2026-11-02 20:48:02,803 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-124
+2026-11-02 20:48:02,803 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-165
+2026-11-02 20:48:02,805 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-172
+2026-11-02 20:48:02,806 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-51
+2026-11-02 20:48:02,806 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-146
+2026-11-02 20:48:02,806 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-63
+2026-11-02 20:48:02,808 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-73
+2026-11-02 20:48:02,808 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-127
+2026-11-02 20:48:02,821 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-167
+2026-11-02 20:48:02,821 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-60
+2026-11-02 20:48:02,821 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-95
+2026-11-02 20:48:02,821 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-125
+2026-11-02 20:48:02,825 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-84
+2026-11-02 20:48:02,825 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-4
+2026-11-02 20:48:02,827 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-171
+2026-11-02 20:48:02,827 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-193
+2026-11-02 20:48:02,828 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-88
+2026-11-02 20:48:02,828 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-45
+2026-11-02 20:48:02,829 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-183
+2026-11-02 20:48:02,830 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-162
+2026-11-02 20:48:02,831 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-194
+2026-11-02 20:48:02,834 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-13
+2026-11-02 20:48:02,837 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-185
+2026-11-02 20:48:02,842 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-179
+2026-11-02 20:48:02,842 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-110
+2026-11-02 20:48:02,844 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-170
+2026-11-02 20:48:02,844 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-6
+2026-11-02 20:48:02,846 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-122
+2026-11-02 20:48:02,849 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-38
+2026-11-02 20:48:02,849 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-136
+2026-11-02 20:48:02,851 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-29
+2026-11-02 20:48:02,852 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-65
+2026-11-02 20:48:02,854 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-50
+2026-11-02 20:48:02,857 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-78
+2026-11-02 20:48:02,859 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-9
+2026-11-02 20:48:02,859 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-156
+2026-11-02 20:48:02,859 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-9
+2026-11-02 20:48:02,861 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-35
+2026-11-02 20:48:02,861 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-21
+2026-11-02 20:48:02,861 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-21
+2026-11-02 20:48:02,862 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-40
+2026-11-02 20:48:02,863 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-129
+2026-11-02 20:48:02,863 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-23
+2026-11-02 20:48:02,864 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-23
+2026-11-02 20:48:02,864 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-154
+2026-11-02 20:48:02,868 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-55
+2026-11-02 20:48:02,868 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-158
+2026-11-02 20:48:02,870 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-83
+2026-11-02 20:48:02,871 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-41
+2026-11-02 20:48:02,871 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-41
+2026-11-02 20:48:02,872 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-144
+2026-11-02 20:48:02,872 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-69
+2026-11-02 20:48:02,873 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-77
+2026-11-02 20:48:02,873 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-152
+2026-11-02 20:48:02,873 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-141
+2026-11-02 20:48:02,873 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-66
+2026-11-02 20:48:02,880 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-57
+2026-11-02 20:48:02,880 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-57
+2026-11-02 20:48:02,880 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-30
+2026-11-02 20:48:02,880 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-30
+2026-11-02 20:48:02,880 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-163
+2026-11-02 20:48:02,881 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-20
+2026-11-02 20:48:02,881 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-20
+2026-11-02 20:48:02,881 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-71
+2026-11-02 20:48:02,881 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-62
+2026-11-02 20:48:02,881 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-62
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-107
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-160
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-68
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-181
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-68
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-80
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-80
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-168
+2026-11-02 20:48:02,882 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-74
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-116
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-31
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-16
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-31
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-28
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-16
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-67
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-28
+2026-11-02 20:48:02,883 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-67
+2026-11-02 20:48:02,884 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-91
+2026-11-02 20:48:02,885 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-153
+2026-11-02 20:48:02,885 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-1
+2026-11-02 20:48:02,885 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
+2026-11-02 20:48:02,887 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-17
+2026-11-02 20:48:02,887 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-3
+2026-11-02 20:48:02,887 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-115
+2026-11-02 20:48:02,887 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-17
+2026-11-02 20:48:02,887 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-3
+2026-11-02 20:48:02,888 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-94
+2026-11-02 20:48:02,888 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-94
+2026-11-02 20:48:02,889 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-8
+2026-11-02 20:48:02,889 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-8
+2026-11-02 20:48:02,889 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-97
+2026-11-02 20:48:02,889 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-97
+2026-11-02 20:48:02,889 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-175
+2026-11-02 20:48:02,890 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-79
+2026-11-02 20:48:02,890 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-79
+2026-11-02 20:48:02,890 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-143
+2026-11-02 20:48:02,890 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-58
+2026-11-02 20:48:02,890 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-58
+2026-11-02 20:48:02,891 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-169
+2026-11-02 20:48:02,891 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-43
+2026-11-02 20:48:02,892 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-43
+2026-11-02 20:48:02,892 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-120
+2026-11-02 20:48:02,892 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-120
+2026-11-02 20:48:02,892 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-113
+2026-11-02 20:48:02,892 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-113
+2026-11-02 20:48:02,892 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-108
+2026-11-02 20:48:02,893 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-108
+2026-11-02 20:48:02,893 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-104
+2026-11-02 20:48:02,893 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-104
+2026-11-02 20:48:02,893 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-187
+2026-11-02 20:48:02,894 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-89
+2026-11-02 20:48:02,894 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-89
+2026-11-02 20:48:02,894 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-196
+2026-11-02 20:48:02,894 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-93
+2026-11-02 20:48:02,894 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-93
+2026-11-02 20:48:02,896 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-150
+2026-11-02 20:48:02,896 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-130
+2026-11-02 20:48:02,896 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-111
+2026-11-02 20:48:02,896 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-130
+2026-11-02 20:48:02,896 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-137
+2026-11-02 20:48:02,896 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-111
+2026-11-02 20:48:02,897 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-137
+2026-11-02 20:48:02,897 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-2
+2026-11-02 20:48:02,897 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-2
+2026-11-02 20:48:02,897 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-174
+2026-11-02 20:48:02,898 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-90
+2026-11-02 20:48:02,898 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-90
+2026-11-02 20:48:02,899 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-180
+2026-11-02 20:48:02,900 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-52
+2026-11-02 20:48:02,900 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-151
+2026-11-02 20:48:02,900 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-52
+2026-11-02 20:48:02,900 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-151
+2026-11-02 20:48:02,901 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-157
+2026-11-02 20:48:02,901 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-157
+2026-11-02 20:48:02,901 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-134
+2026-11-02 20:48:02,902 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-134
+2026-11-02 20:48:02,902 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-200
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-192
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-192
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-24
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-184
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-184
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-24
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-119
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-119
+2026-11-02 20:48:02,903 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-195
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-178
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-178
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-199
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-199
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-27
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-27
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-53
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-53
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-182
+2026-11-02 20:48:02,904 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-182
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-147
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-105
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-147
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-105
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-101
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-139
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-139
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-101
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-133
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-155
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-133
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-155
+2026-11-02 20:48:02,905 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-159
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-159
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-87
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-75
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-75
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-87
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-76
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-76
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-177
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-177
+2026-11-02 20:48:02,906 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-189
+2026-11-02 20:48:02,907 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-176
+2026-11-02 20:48:02,907 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-189
+2026-11-02 20:48:02,907 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-176
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-34
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-128
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-34
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-128
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-85
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-85
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-12
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-109
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-12
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-138
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-19
+2026-11-02 20:48:02,908 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-109
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-138
+2026-11-02 20:48:02,902 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-173
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-173
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-19
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-121
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-103
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-86
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-121
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-14
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-86
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-103
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-14
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-44
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-100
+2026-11-02 20:48:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-44
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-100
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-191
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-191
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-190
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-190
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-48
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-48
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-39
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-39
+2026-11-02 20:48:02,910 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-142
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-142
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-70
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-70
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-197
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-197
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-64
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-64
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-36
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-36
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-188
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-161
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-188
+2026-11-02 20:48:02,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-132
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-161
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-132
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-42
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-42
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-166
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-54
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-126
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-131
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-112
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-131
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-112
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-166
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-54
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-126
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-59
+2026-11-02 20:48:02,912 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-92
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-59
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-92
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-145
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-145
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-149
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-26
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-99
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-149
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-26
+2026-11-02 20:48:02,913 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-99
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-135
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-164
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-135
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-164
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-186
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-186
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-118
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-47
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-118
+2026-11-02 20:48:02,914 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-47
+2026-11-02 20:48:02,915 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-18
+2026-11-02 20:48:02,915 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-18
+2026-11-02 20:48:02,915 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-140
+2026-11-02 20:48:02,915 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-82
+2026-11-02 20:48:02,915 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-148
+2026-11-02 20:48:02,915 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-140
+2026-11-02 20:48:02,915 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-82
+2026-11-02 20:48:02,915 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-148
+2026-11-02 20:48:02,916 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Users 1-198
+2026-11-02 20:48:02,916 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-198
+2026-11-02 20:48:02,916 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-11-02 20:48:02,917 INFO o.a.j.r.Summariser: summary +  11747 in 00:00:03 = 4027.1/s Avg:    30 Min:     0 Max:   841 Err:     0 (0.00%) Active: 0 Started: 200 Finished: 200
+2026-11-02 20:48:02,917 INFO o.a.j.r.Summariser: summary = 921914 in 00:04:30 = 3413.4/s Avg:    12 Min:     0 Max:  1283 Err:     0 (0.00%)
+2026-11-02 20:48:02,918 INFO o.a.j.JMeter: Generating Dashboard
+2026-11-02 20:48:02,918 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-11-02 20:48:02,928 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-11-02 20:48:10,083 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-11-02 20:48:10,083 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-11-02 20:48:10,084 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-11-02 20:48:10,084 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-11-02 20:48:10,099 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-11-02 20:48:10,100 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-11-02 20:48:10,100 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-11-02 20:48:10,100 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-11-02 20:48:13,707 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-11-02 20:48:13,717 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-11-02 20:48:13,717 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-11-02 20:48:13,718 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-11-02 20:48:17,443 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-11-02 20:48:17,451 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 6453398 samples
+2026-11-02 20:48:17,451 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-11-02 20:48:17,451 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-11-02 20:48:17,451 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-11-02 20:48:17,451 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-11-02 20:48:17,451 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-11-02 20:48:17,451 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-11-02 20:48:17,454 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-11-02 20:48:17,458 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-11-02 20:48:17,458 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-11-02 20:48:17,458 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-11-02 20:48:17,458 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 13828710 samples
+2026-11-02 20:48:17,458 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 2765742 samples
+2026-11-02 20:48:17,458 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 921914 samples
+2026-11-02 20:48:17,458 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 921914 samples produced in 14s 510 ms on channel 0
+2026-11-02 20:48:17,458 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-11-02 20:48:17,526 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-11-02 20:48:17,526 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-11-02 20:48:17,527 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-11-02 20:48:17,527 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-11-02 20:48:17,528 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to D:\javalabs\Lab6TestingSW\perf\report-jmeter-stress\statistics.json
+2026-11-02 20:48:17,558 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-11-02 20:48:17,560 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: D:\javalabs\Lab6TestingSW\perf\report-jmeter-stress
+2026-11-02 20:48:17,666 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: D:\javalabs\Lab6TestingSW\perf\report-jmeter-stress, creating folder structure
+2026-11-02 20:48:17,668 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'D:\apache-jmeter-5.6.3\bin\report-template' to 'D:\javalabs\Lab6TestingSW\perf\report-jmeter-stress', got message: D:\javalabs\Lab6TestingSW\perf\report-jmeter-stress, found non empty folder with following content [D:\javalabs\Lab6TestingSW\perf\report-jmeter-stress\statistics.json], will be ignored
+2026-11-02 20:48:17,929 INFO o.a.j.JMeter: Dashboard generated
